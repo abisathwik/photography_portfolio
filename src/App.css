@@ -1,0 +1,133 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--charcoal));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.5);
+}
+
+/* Image loading placeholder */
+.image-frame {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--charcoal)) 0%,
+    hsl(var(--muted)) 100%
+  );
+}
+
+/* Ensure images don't cause layout shift */
+.image-frame img {
+  display: block;
+}
+
+/* Button hover lift effect */
+.btn-gold {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+}
+
+/* Section z-index stacking for proper overlay */
+section {
+  position: relative;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .text-hero {
+    font-size: clamp(32px, 8vw, 44px) !important;
+  }
+  
+  .text-section {
+    font-size: clamp(28px, 7vw, 40px) !important;
+  }
+  
+  .text-small-section {
+    font-size: clamp(24px, 6vw, 34px) !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid hsl(var(--gold));
+  outline-offset: 2px;
+}
+
+/* Date input styling for dark theme */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.8;
+}
+
+/* Prevent text selection on interactive elements */
+.section-label,
+.btn-gold,
+.font-mono {
+  user-select: none;
+}
+
+/* Gallery tile aspect ratio fallback */
+.gallery-tile {
+  min-height: 200px;
+}
+
+/* Lightbox animation */
+@keyframes lightbox-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Form input autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: hsl(var(--off-white));
+  -webkit-box-shadow: 0 0 0px 1000px hsl(var(--charcoal)) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
