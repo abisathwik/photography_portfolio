@@ -107,7 +107,7 @@ const PortfolioSection = () => {
       {/* Left Image Frame */}
       <div
         ref={leftImageRef}
-        className="absolute left-[7vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[7vw] top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -120,7 +120,7 @@ const PortfolioSection = () => {
       {/* Right Image Frame */}
       <div
         ref={rightImageRef}
-        className="absolute left-[53vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[53vw] top-[62vh] md:top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -133,14 +133,14 @@ const PortfolioSection = () => {
       {/* Vertical Divider */}
       <div
         ref={dividerRef}
-        className="absolute left-1/2 top-[12vh] h-[76vh] w-[1px] bg-off-white/25 origin-top"
+        className="absolute left-1/2 top-[12vh] h-[76vh] md:h-[76vh] w-[1px] bg-off-white/25 origin-top"
         style={{ willChange: 'transform' }}
       />
 
       {/* Section Label - Bottom Left */}
       <div
         ref={labelRef}
-        className="absolute left-[7vw] top-[90vh] flex items-center gap-3"
+        className="absolute left-[10vw] md:left-[7vw] top-[90vh] md:top-[90vh] flex items-center gap-3"
         style={{ willChange: 'transform, opacity' }}
       >
         <span className="w-1 h-1 rounded-full bg-gold" />
@@ -150,7 +150,7 @@ const PortfolioSection = () => {
       {/* Microcopy - Bottom Right */}
       <p
         ref={microcopyRef}
-        className="absolute right-[7vw] top-[90vh] text-xs text-off-white/60 max-w-[280px] text-right font-light"
+        className="absolute left-[10vw] md:right-[7vw] top-[20vh] md:top-[90vh] w-[80vw] md:max-w-[280px] md:text-right text-xs md:text-xs text-off-white/60 font-light"
         style={{ willChange: 'transform, opacity' }}
       >
         {content.portfolio.microcopy}

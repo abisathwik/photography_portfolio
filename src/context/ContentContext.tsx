@@ -49,16 +49,7 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 export function ContentProvider({ children }: { children: ReactNode }) {
   // Initialize content from localStorage or defaults
   const [content, setContent] = useState<SiteContent>(() => {
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(CONTENT_STORAGE_KEY);
-      if (stored) {
-        try {
-          return { ...defaultContent, ...JSON.parse(stored) };
-        } catch {
-          return defaultContent;
-        }
-      }
-    }
+    // Temporarily ignore localStorage to use updated defaults with correct image paths
     return defaultContent;
   });
 

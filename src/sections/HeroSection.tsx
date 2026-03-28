@@ -166,7 +166,7 @@ const HeroSection = () => {
       {/* Left Image Frame */}
       <div
         ref={leftImageRef}
-        className="absolute left-[6vw] top-[14vh] w-[42vw] h-[72vh] image-frame"
+        className="absolute left-[10vw] md:left-[6vw] top-[14vh] w-[80vw] md:w-[42vw] h-[60vh] md:h-[72vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -179,7 +179,7 @@ const HeroSection = () => {
       {/* Right Image Frame */}
       <div
         ref={rightImageRef}
-        className="absolute left-[52vw] top-[14vh] w-[42vw] h-[72vh] image-frame"
+        className="absolute left-[10vw] md:left-[52vw] top-[74vh] md:top-[14vh] w-[80vw] md:w-[42vw] h-[60vh] md:h-[72vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img

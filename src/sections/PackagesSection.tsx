@@ -120,7 +120,7 @@ const PackagesSection = () => {
       {/* Left Image Frame */}
       <div
         ref={leftImageRef}
-        className="absolute left-[7vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[7vw] top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -133,7 +133,7 @@ const PackagesSection = () => {
       {/* Right Image Frame */}
       <div
         ref={rightImageRef}
-        className="absolute left-[53vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[53vw] top-[62vh] md:top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -146,7 +146,7 @@ const PackagesSection = () => {
       {/* Section Label - Bottom Left */}
       <div
         ref={labelRef}
-        className="absolute left-[7vw] top-[90vh] flex items-center gap-3"
+        className="absolute left-[10vw] md:left-[7vw] top-[90vh] md:top-[90vh] flex items-center gap-3"
         style={{ willChange: 'transform, opacity' }}
       >
         <span className="w-1 h-1 rounded-full bg-gold" />
@@ -156,7 +156,7 @@ const PackagesSection = () => {
       {/* Package List - Right Side Overlay */}
       <div
         ref={listRef}
-        className="absolute left-[58vw] top-[52vh] w-[32vw] z-10"
+        className="absolute left-[10vw] md:left-[58vw] top-[20vh] md:top-[52vh] w-[80vw] md:w-[32vw] z-10"
         style={{ willChange: 'transform, opacity' }}
       >
         <div className="space-y-5">

@@ -106,7 +106,7 @@ const ContactSection = () => {
       {/* Left Image Frame */}
       <div
         ref={leftImageRef}
-        className="absolute left-[7vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[7vw] top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -119,7 +119,7 @@ const ContactSection = () => {
       {/* Right Image Frame */}
       <div
         ref={rightImageRef}
-        className="absolute left-[53vw] top-[12vh] w-[40vw] h-[76vh] image-frame"
+        className="absolute left-[10vw] md:left-[53vw] top-[62vh] md:top-[12vh] w-[80vw] md:w-[40vw] h-[50vh] md:h-[76vh] image-frame"
         style={{ willChange: 'transform, opacity' }}
       >
         <img
@@ -132,7 +132,7 @@ const ContactSection = () => {
       {/* Section Label - Bottom Left */}
       <div
         ref={labelRef}
-        className="absolute left-[7vw] top-[90vh] flex items-center gap-3"
+        className="absolute left-[10vw] md:left-[7vw] top-[90vh] md:top-[90vh] flex items-center gap-3"
         style={{ willChange: 'transform, opacity' }}
       >
         <span className="w-1 h-1 rounded-full bg-gold" />
@@ -142,7 +142,7 @@ const ContactSection = () => {
       {/* Contact Content - Bottom Right */}
       <div
         ref={contentBoxRef}
-        className="absolute right-[7vw] top-[68vh] w-[32vw] z-10 text-right"
+        className="absolute left-[10vw] md:right-[7vw] top-[20vh] md:top-[68vh] w-[80vw] md:w-[32vw] md:text-right z-10"
         style={{ willChange: 'transform, opacity' }}
       >
         <p className="content-item text-sm text-off-white/90 font-light leading-relaxed mb-4">
