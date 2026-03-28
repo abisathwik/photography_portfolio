@@ -8,15 +8,15 @@ export const defaultContent: SiteContent = {
     subheadline: "Wedding & editorial photography—intimate, honest, and timeless.",
     ctaPrimary: "Book a session",
     ctaSecondary: "View portfolio",
-    leftImage: "/hero_couple_closeup.jpg",
-    rightImage: "/hero_couple_field.jpg",
+    leftImage: "/images/hero_couple_closeup.jpg",
+    rightImage: "/images/hero_couple_field.jpg",
   },
   
   portfolio: {
     label: "PORTFOLIO",
     microcopy: "A selection of weddings, portraits, and editorial stories.",
-    leftImage: "/portfolio_01.jpg",
-    rightImage: "/portfolio_02.jpg",
+    leftImage: "/images/portfolio_01.jpg",
+    rightImage: "/images/portfolio_02.jpg",
   },
   
   packages: {
@@ -42,16 +42,16 @@ export const defaultContent: SiteContent = {
       },
     ],
     ctaText: "Request detailed pricing",
-    leftImage: "/packages_01.jpg",
-    rightImage: "/packages_02.jpg",
+    leftImage: "/images/packages_01.jpg",
+    rightImage: "/images/packages_02.jpg",
   },
   
   about: {
     label: "ABOUT",
     paragraph: "I work quietly, move quickly, and chase the light that makes ordinary moments feel like cinema.",
     linkText: "Read the full story",
-    leftImage: "/about_01.jpg",
-    rightImage: "/about_02.jpg",
+    leftImage: "/images/about_01.jpg",
+    rightImage: "/images/about_02.jpg",
   },
   
   journal: {
@@ -62,8 +62,8 @@ export const defaultContent: SiteContent = {
       { id: "3", title: "What to Wear: Engagement Shoots", category: "Guide" },
     ],
     linkText: "Browse all entries",
-    leftImage: "/journal_01.jpg",
-    rightImage: "/journal_02.jpg",
+    leftImage: "/images/journal_01.jpg",
+    rightImage: "/images/journal_02.jpg",
   },
   
   contact: {
@@ -71,15 +71,15 @@ export const defaultContent: SiteContent = {
     prompt: "Tell me your date and city. I'll reply within 48 hours.",
     email: "hello@gadapagayathri.com",
     ctaText: "Start a conversation",
-    leftImage: "/contact_01.jpg",
-    rightImage: "/contact_02.jpg",
+    leftImage: "/images/contact_01.jpg",
+    rightImage: "/images/contact_02.jpg",
   },
   
   feature: {
     statement: "YOUR STORY, FRAMED BEAUTIFULLY.",
     ctaText: "Check availability",
     trustLine: "Limited dates per month • 48-hour response",
-    backgroundImage: "/feature_bride.jpg",
+    backgroundImage: "/images/feature_bride.jpg",
   },
   
   gallery: {
@@ -88,7 +88,7 @@ export const defaultContent: SiteContent = {
     images: [
       {
         id: "1",
-        src: "/mosaic_01.jpg",
+        src: "/images/mosaic_01.jpg",
         title: "The Grand Ceremony",
         location: "Hyderabad, India",
         date: "March 2024",
@@ -97,7 +97,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "2",
-        src: "/mosaic_02.jpg",
+        src: "/images/mosaic_02.jpg",
         title: "Coastal Love",
         location: "Goa, India",
         date: "February 2024",
@@ -106,7 +106,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "3",
-        src: "/mosaic_03.jpg",
+        src: "/images/mosaic_03.jpg",
         title: "Elegant Reception",
         location: "Mumbai, India",
         date: "January 2024",
@@ -115,7 +115,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "4",
-        src: "/mosaic_04.jpg",
+        src: "/images/mosaic_04.jpg",
         title: "Bridal Portrait",
         location: "Delhi, India",
         date: "December 2023",
@@ -124,7 +124,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "5",
-        src: "/mosaic_05.jpg",
+        src: "/images/mosaic_05.jpg",
         title: "Groom Preparation",
         location: "Bangalore, India",
         date: "November 2023",
@@ -133,7 +133,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "6",
-        src: "/mosaic_06.jpg",
+        src: "/images/mosaic_06.jpg",
         title: "Bridal Party",
         location: "Chennai, India",
         date: "October 2023",
@@ -142,7 +142,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "7",
-        src: "/mosaic_07.jpg",
+        src: "/images/mosaic_07.jpg",
         title: "First Dance",
         location: "Jaipur, India",
         date: "September 2023",
@@ -151,7 +151,7 @@ export const defaultContent: SiteContent = {
       },
       {
         id: "8",
-        src: "/mosaic_08.jpg",
+        src: "/images/mosaic_08.jpg",
         title: "Rings & Details",
         location: "Pune, India",
         date: "August 2023",
